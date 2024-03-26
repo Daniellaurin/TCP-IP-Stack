@@ -7,6 +7,8 @@
 #include <unistd.h>
 #define TUNSETIFF _IOW('T', 202, int)
 
+printf("Hello world!");
+
 int tun_alloc(char *dev) {
   struct ifreq ifr;
   int fd, err;
